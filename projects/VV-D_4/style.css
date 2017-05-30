@@ -1,0 +1,25 @@
+h1 {
+  color:red;
+}
+
+p.prima_parte {
+  font-style:italic;
+}
+
+p.seconda_parte {
+  background:#94F2C9
+}
+
+#primo_h1,p {
+  border-width: medium;
+  border-color: black;
+  border-style: solid;
+}
+
+p>strong {
+  color:green
+}
+
+p>em {
+  font-variant:small-caps
+}
