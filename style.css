@@ -1,4 +1,30 @@
-h1 {
-  color: red;
+<<<<<<< HEAD
+h1{
+  color: black;
   font-style: italic;
 }
+
+
+
+#primo_h1, p {
+  font-family: arial;
+  color: black;
+  text-align: center;
+}
+
+p.seconda_parte {
+  font-family: sans-serif;
+}
+
+p > strong {
+  color: green
+}
+
+p  em {
+  font-variant: small-caps;
+}
+=======
+h1{
+  color: red;
+}
+>>>>>>> origin/master
