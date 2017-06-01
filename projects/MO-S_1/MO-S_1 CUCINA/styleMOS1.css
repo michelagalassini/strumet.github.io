@@ -1,0 +1,54 @@
+h1,h2,h3{
+  border-width: medium;
+  border-color: black;
+  border-style: solid;
+font-family:monospace;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+h1{
+  font-size:5rem;
+  text-align:center;
+  color:black;
+}
+h2{
+  font-size:3rem;
+  text-align:center;
+  color:black;
+}
+h3{
+  font-size:3rem;
+  text-align:center;
+  color:black;
+}
+p1{
+  color:green;
+  text-align:left;
+  font-family:monospace;
+  font-size:2rem;
+  line-height:normal;
+}
+p2{
+  color:black;
+  text-align:left;
+  font-family:monospace;
+  font-size:2rem;
+  line-height:normal;
+}
+ul{
+  font-size:2rem;
+  color:red;
+  font-family:monospace;
+}
