@@ -1,4 +1,4 @@
-h1,h2,h3{
+h1,h2,h3,h4{
   border-width: medium;
   border-color: black;
   border-style: solid;
@@ -33,6 +33,12 @@ h3{
   text-align:center;
   color:black;
 }
+h4{
+  font-size:3rem;
+  text-align:center;
+  color:black;
+}
+
 p1{
   color:green;
   text-align:left;
