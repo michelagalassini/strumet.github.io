@@ -1,7 +1,7 @@
 h1,h2,h3,h4{
-  border-width: medium;
+  border-width: thin;
   border-color: black;
-  border-style: solid;
+  border-style:inherit;
 font-family:monospace;
 }
 html, body {
@@ -47,14 +47,24 @@ p1{
   line-height:normal;
 }
 p2{
-  color:black;
+  color:green;
   text-align:left;
   font-family:monospace;
   font-size:2rem;
   line-height:normal;
 }
+
 ul{
   font-size:2rem;
-  color:red;
+  color:#556B2F;
   font-family:monospace;
+}
+img{
+max-width:800px;
+max-height:800px;
+
+}
+aside{
+  text-align: center;
+
 }
