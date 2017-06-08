@@ -1,5 +1,7 @@
 h1 {
   color:red;
+  text-align: center;
+  text-shadow: 2px 0px #CCC;
 }
 
 p.prima_parte {
@@ -11,9 +13,7 @@ p.seconda_parte {
 }
 
 #primo_h1 {
-  border-width: medium;
-  border-color: black;
-  border-style: solid;
+  border-bottom: 1px solid #CCC;
 }
 
 p>strong {
@@ -22,4 +22,24 @@ p>strong {
 
 p>em {
   font-variant:small-caps
+}
+
+img.home{
+  width: 80%;
+}
+.pull-left{
+  float:left;
+}
+
+figure{
+  margin: 0;
+}
+figcaption{
+  text-align: center;
+}
+
+.div-img{
+  width: 50%;
+  text-align: center;
+  margin-bottom: 15px;
 }
