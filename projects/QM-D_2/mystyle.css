@@ -1,16 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #ABCDEF;
+}
+
+body {
+     font-family: 'Advent Pro';
+}
+a{
+color: inherit;
+}
+
+div.mondo{
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
 h1{
-  color :black;
-  font-style: arial;
-  background:yellow;
+  position: relative;
+  font-size: 600%;
+  text-align: center;
 }
-h1#primo_h1{
-  border-width: thin;
-  border-color: black;
-  border-style: solid;
+
+div.pan{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
 }
-p > strong {
-  color:red;
+
+p.descrizione{
+  position: relative;
+  font-size: 180%;
+  margin-top: 7%;
+  font-style: italic;
 }
-p > em {
-  font-variant: small-caps;
+
+div.elenco{
+  position: fixed;
+  font-size: 200%;
+  margin-top: 8%;
+  margin-left: 3%;
+}
+
+span.foto1{
+  content:url(imm/frontale.jpg);
+  width: 47%;
+}
+span.foto2{
+  content:url(imm/modifiche.jpg);
+  width: 47%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+span.foto3{
+  content:url(imm/interno01.jpg);
+  width: 47%;
+  margin-bottom: 17%;
+}
+span.foto4{
+  content:url(imm/interno02.jpg);
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 9%;
 }
