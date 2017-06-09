@@ -6,26 +6,26 @@ html, body {
 }
 
 html {
-  font-size: 10px;
+  font-size: 9px;
   background-color: white;
 }
 
 body {
-  width: 70%;
-  min-width: 800px;
+  width: 50%;
+  min-width: 700px;
   margin: 0 auto;
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: inherit;
+  font-family: "inherit", sans-serif;
   color: black;
 }
 
 p, input, li {
-  font-family: inherit, sans-serif;
-  color: #2a2a2a;
+ font-family: "inherit";
+  color: black;
 }
 
 h1 {
