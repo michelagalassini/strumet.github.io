@@ -19,31 +19,35 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: "inherit", sans-serif;
-  color: black;
+  font-family: "Source Sans Pro", "Helvetica",sans-serif;
+  color: #303030;
 }
 
 p, input, li {
- font-family: "inherit";
+ font-family: "Source Sans Pro", "Helvetica",sans-serif;
   color: black;
+   font-weight: lighter;
 }
 
 h1 {
   font-size: 4rem;
   text-align: center;
+   font-weight: 500;
 }
 
 h2 {
   font-size: 3rem;
-  text-align: center;
+  text-align: relative;
+   font-weight: normal;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
+   font-weight: lighter;
 }
 
 p, li {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
 }
 
@@ -61,7 +65,7 @@ main, header, nav, article, aside, footer, section {
 }
 
 h1 {
-  flex: 5;
+  flex: 10;
   text-transform: uppercase;
 }
 
