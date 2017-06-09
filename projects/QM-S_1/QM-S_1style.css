@@ -37,6 +37,12 @@ p, input, li {
    font-weight: lighter;
 }
 
+p1, input, li {
+ font-family: "Source Sans Pro", "Helvetica",sans-serif;
+  color: #303030;
+   font-weight: normal;
+}
+
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -52,9 +58,15 @@ h2 {
 h3 {
   font-size: 1.7rem;
    font-weight: lighter;
+
 }
 
 p, li {
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+p1, li {
   font-size: 1.7rem;
   line-height: 1.5;
 }
