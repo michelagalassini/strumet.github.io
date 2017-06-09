@@ -26,7 +26,7 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Source Sans Pro", "Helvetica",sans-serif;
   color: #303030;
 }
@@ -61,6 +61,12 @@ h3 {
 
 }
 
+h4 {
+  font-size: 2rem;
+  text-align: relative;
+   font-weight: normal;
+}
+
 p, li {
   font-size: 1.7rem;
   line-height: 1.5;
@@ -80,7 +86,7 @@ header {
 }
 
 main, header, nav, article, aside, footer, section {
-  background-color: rgba(0,255,0,0.5);
+  background-color: grey;
   padding: 1%;
 }
 
