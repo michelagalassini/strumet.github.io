@@ -38,4 +38,9 @@ p em {
 h1{
   color: white;
 }
+
+img {
+  max-height: 200px;
+  max-width: 95px;
+}
 > origin/master
