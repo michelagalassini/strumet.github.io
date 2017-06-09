@@ -6,13 +6,14 @@ html, body {
 
 html{
   font-size: 15px;
-  background-color: #ffb331;
+  background-color:#a0e248;
 }
 
 h3{
   font-family:'Myriad Pro Light';
   color:black;
   font-style: normal;
+  text-align: center;
 }
 
 
@@ -28,7 +29,7 @@ p.seconda_parte {
 }
 
 p > strong {
-  color: #6d6d6d
+  color: #383838;
 }
 
 p  em {
@@ -37,5 +38,10 @@ p  em {
 =======
 h1{
   color: red;
+}
+
+img {
+  max-height: 200px;
+
 }
 >>>>>>> origin/master
