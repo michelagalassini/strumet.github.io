@@ -18,7 +18,7 @@ body {
 
 /* || typography */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Source Sans Pro", "Helvetica",sans-serif;
   color: #303030;
 }
@@ -44,6 +44,12 @@ h2 {
 h3 {
   font-size: 1.7rem;
    font-weight: lighter;
+}
+
+h4 {
+  font-size: 2rem;
+  text-align: relative;
+   font-weight: normal;
 }
 
 p, li {
