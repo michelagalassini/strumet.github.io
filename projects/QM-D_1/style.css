@@ -22,19 +22,33 @@ h3{
 
 p {
   background: #D7D6CA;
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: inherit;
 }
 
 
 ul{
   padding-left: 0px;
-
 }
 
-p > strong {
-  color: green
+img.primaclasse {
+  width: 1191px;
+  height: 842px;
+  border: 10px solid #D7D6CA;
+  margin-left: 350px;
 }
 
-p  em {
-  font-variant: small-caps;
+img.secondaclasse {
+  width: 842px;
+  height: 595px;
+  border: 10px solid #D7D6CA;
+  margin-left: 550px;
+}
+
+img.terzaclasse {
+  width: 842px;
+  height: 595px;
+  border: 10px solid #D7D6CA;
 }
