@@ -1,27 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+ body {
+   font-family:'Roboto';
+   background-color: #ccffff
+ }
+
 h1 {
-  color:red;
+  color:#669999;
   text-align: center;
   text-shadow: 2px 0px #CCC;
+  font-family: 'Limelight', cursive;
 }
 
-p.prima_parte {
-  font-style:italic;
+p.prima_descrizione{
+  background:#94F2C9;
+  border: 1px solid black;
 }
 
-p.seconda_parte {
-  background:#94F2C9
+p.seconda_descrizione{
+  background:#94F2C9;
+  border: 1px solid black;
+
 }
+
 
 #primo_h1 {
-  border-bottom: 1px solid #CCC;
-}
-
-p>strong {
-  color:green
-}
-
-p>em {
-  font-variant:small-caps
+  border-bottom: 1px solid #669999;
 }
 
 img.home{
@@ -31,9 +37,6 @@ img.home{
   float:left;
 }
 
-figure{
-  margin: 0;
-}
 figcaption{
   text-align: center;
 }
@@ -42,4 +45,54 @@ figcaption{
   width: 50%;
   text-align: center;
   margin-bottom: 15px;
+}
+
+.titoletti{
+  margin-top:10px;
+  text-shadow: 2px 0px #CCC;
+  text-align: left;
+
+}
+.div-parent-img{
+  display:table;
+  width:100%;
+}
+
+/*CLASSI VALERIA*/
+
+.paragrafo1{
+  width:80%;
+}
+
+.pianta{
+  margin-left:10px;
+  width:250px;
+}
+
+.descrizione{
+width:40%;
+float:left;
+}
+
+.stiledescrizione{
+  background:#94F2C9;
+  border: 1px solid black;
+}
+
+.tavola{
+  height:150px;
+  margin-bottom:5px;
+  float:left;
+}
+
+.div-tavole{
+  width:10%;
+}
+
+.foto{
+  margin-left:20px;
+}
+
+.titolimobili{
+  text-decoration: underline;
 }

@@ -130,6 +130,12 @@ nav a, nav span {
   color: red;
 
 }
+/* || image settings */
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
 
 /* || main layout */
 
