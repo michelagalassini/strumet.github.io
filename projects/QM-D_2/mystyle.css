@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Advent Pro');
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #ABCDEF;
+}
+
+body {
+     font-family: 'Advent Pro';
+}
+
+div.align{
+  float: left;
+  clear: none; 
+}
+
+a{
+color: inherit;
+text-decoration:none;
+}
+
+span.elenco{
+  position: absolute;
+  background: #ABCDEF;
+  width: auto;
+  height: auto;
+  font-size: 250%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.all{
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+h1{
+  position: relative;
+  font-size: 600%;
+  text-align: center;
+}
+
+span.pan{
+	content:url(imm/panoramica.jpg);
+    position: relative;
+	-webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+p.descrizione{
+  position: relative;
+  font-size: 180%;
+  margin-top: 6%;
+  font-style: italic;
+}
+
+span.foto1{
+  content:url(imm/frontale.jpg);
+  margin-top: 6%;
+  width: 47%;
+}
+span.foto2{
+  content:url(imm/modifiche.jpg);
+  width: 47%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+span.foto3{
+  content:url(imm/interno01.jpg);
+  width: 47%;
+  margin-bottom: 17%;
+}
+span.foto4{
+  content:url(imm/interno02.jpg);
+  width: 40%;
+  margin-top: 3%;
+  margin-left: 9%;
+}
+
+div.proposta{
+	position: relative;
+	font-weight: bold;
+	font-size: 400%;
+	text-align: center;
+	margin-top: 6%;
+}
+
+div.prop1{
+  content:url(imm/prop0001_opt.jpg);
+  margin-top: 6%;
+  position: relative;
+  max-width:100%;
+  max-height:100%;
+}
+
+div.prop2{
+  content:url(imm/prop0002_opt.jpg);
+  margin-top: 2%;
+  max-width:100%;
+  max-height:100%;
+}
+
+div.prop3{
+  content:url(imm/prop0003_opt.jpg);
+  margin-top: 2%;
+  position: relative;
+  max-width:100%;
+  max-height:100%;
+  padding-bottom: 2%;
+}

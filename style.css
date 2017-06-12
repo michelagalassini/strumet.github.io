@@ -1,4 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i');
+
+body {
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #272727;
+}
+
+
 h1 {
-  color: red;
-  font-style: italic;
+  font-weight: 300;
+  letter-spacing: .1em;
+  font-size: 2.25em;
+  margin: 10px 0 5px;
+}
+
+a:link, a:visited {
+	color: #272727;
+}
+
+a:hover, a:active {
+	color: rgb(127, 127, 127);
+}
+
+p.subheading {
+	letter-spacing: 0.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+}
+
+p.subheading em {
+	font-size: 12px;
+}
+
+header {
+	text-align: center;
+	padding: 10px;
+	border: solid #272727;
+	border-width: 0 0 1px 0;
+}
+
+nav {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+ul#nav {
+	padding: 0;
+	list-style: none;
+	position: relative;
+	font-size: 12px;
+	z-index: 500;
+}
+
+#nav li.top {
+	display: block;
+	float: left;
+	margin: 0 1px;
+	background: #fff;
+}
+
+#nav li a.top_link {
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+
+#nav li a.top_link span {
+	float:left;
+	display:block;
+	padding:0 24px;
+}
+
+
+#nav li:hover {
+	position:relative;
+	z-index:200;
+}
+
+
+#nav li:hover ul.sub {
+	z-index:300;
+	top: 0;
+	left: 0px;
+	display: block;
+}
+
+#nav li:hover ul.sub li {
+	display:block;
+	position:relative;
+}
+
+#nav li:hover ul.sub li a {
+	display:block;
+}
+
+#nav li ul.sub li a.fly {
+	background: white;
+}
+#nav li:hover ul.sub li a:hover,
+#nav li:hover ul.sub li a.fly:hover {
+	background: rgba(187, 187, 187, 1);
+	color:#fff;
+	}
+
+#nav ul,
+#nav li:hover ul ul,
+#nav li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover ul ul,
+#nav li:hover li:hover li:hover li:hover ul ul {
+    position: absolute;
+	display: none;
+    padding: 0;
+    list-style: none;
+}
+
+#nav li:hover ul.sub li a {
+    display: block;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    text-indent: 5px;
+    color: #000;
+    text-decoration: none;
+	background: rgba(227, 227, 227, 1);
+	margin: 1px 0;
 }
