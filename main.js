@@ -1,3 +1,26 @@
+
+function readTextFile(file){
+	var text = '1'
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+				text = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+	return text
+}
+
+var css = readTextFile("https://strumet.github.io/style.css");
+
+
 menu = {'Home':'',
 	'Monterrey Duplex': 'MO-D',
 	'Monterrey Simplex': 'MO-S',
@@ -59,3 +82,6 @@ for (key in menu) {
 	}
 }
 
+style = document.createElement("style");
+style.innerHTML = css
+document.head.appendChild(style);
