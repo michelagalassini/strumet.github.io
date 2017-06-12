@@ -1,42 +1,143 @@
 
-h1#primo_h1{
-color: #A49077;
-font-size: 50px;
-font-style: italic;
-margin-top: auto;
-margin-bottom: 10px;
-margin-left: 0px;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+background-color: white;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+h1, h2, h3 {
+  font-family: inherit;
+  color: #A49077;
+
+}
+
+p, input, li {
+  font-family: inherit;
+  color: black;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
 }
 
 h2 {
-  font-style: italic;
-  margin-top: 0px;
-  margin-bottom: 40px;
-}
-
-h3{
   font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+font-size: 20px;
+
+}
+
+p, li {
+  font-size: 20px;
+  line-height: 1.5;
+  }
+
+
+
+header {
   margin-bottom: 10px;
-}
-
-p {
-  background: #D7D6CA;
-  margin-top: 0px;
-}
-
-ul{
-  padding-left: 0px;
-
-}
-
-p > strong {
-  color: green
-}
-
-p  em {
-  font-variant: small-caps;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 
+main, header, nav, article, aside, footer, section {
+  background-color: #D7D6CA;
+  padding: 1%;
+}
 
-2000 1358
+h1 {
+  flex: 5;
+  font-style: italic;
+}
+
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+
+}
+
+nav a, nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+    color: #A49077;
+
+}
+
+
+main {
+  display: flex;
+
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 7px;
+
+  padding: 1%;
+
+}
+
+aside a {
+  display: block;
+  float: left;
+  width: 70%;
+  margin-left: 23px;
+
+}
+
+aside img {
+
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+
+a {
+  color: #A49077;
+  font-weight: bold;
+  text-decoration: none;
+}
