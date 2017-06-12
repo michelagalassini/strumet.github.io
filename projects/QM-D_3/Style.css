@@ -1,0 +1,13 @@
+h1{
+  color :red;
+  font-style: italic;
+}
+h1#primo_h1, h1#secondo_h1, h1#terzo_h1  {
+  font-family: sans-serif;
+}
+p > strong {
+  color:green;
+}
+p > em {
+  font-variant: small-caps;
+}

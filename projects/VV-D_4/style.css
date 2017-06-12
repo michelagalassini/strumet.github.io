@@ -62,7 +62,9 @@ figcaption{
 
 .paragrafo1{
   width:80%;
+margin-top:0;
 }
+
 
 .pianta{
   margin-left:10px;
@@ -77,6 +79,7 @@ float:left;
 .stiledescrizione{
   background:#94F2C9;
   border: 1px solid black;
+  margin-top:0;
 }
 
 .tavola{
@@ -98,5 +101,5 @@ float:left;
 }
 
 .margine{
-  margin-top: 20px;
+  margin-top: 30px;
 }
