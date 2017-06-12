@@ -1,4 +1,3 @@
-
 html, body {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@ html, body {
 
 html {
   font-size: 10px;
-background-color: white;
+  background-color: #faf0e6;
 }
 
 body {
@@ -16,38 +15,35 @@ body {
 }
 
 
-
 h1, h2, h3 {
-  font-family: inherit;
-  color: #A49077;
-
+  font-family: 'helvetica', cursive;
+  color: #2a2a2a;
 }
 
 p, input, li {
-  font-family: inherit;
-  color: black;
+  font-family: 'helvetica', sans-serif;
+  color: #2a2a2a;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 4rem;
   text-align: center;
+  text-shadow: 0px 0px 0px black;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 3rem;
   text-align: center;
 }
 
 h3 {
-font-size: 20px;
-
+  font-size: 2.2rem;
 }
 
 p, li {
-  font-size: 20px;
+  font-size: 1.6rem;
   line-height: 1.5;
-  }
-
+}
 
 
 header {
@@ -56,15 +52,19 @@ header {
   flex-flow: row wrap;
 }
 
+body > * {
+  background-color: #ffcccc;
+  padding: 1%;
+}
 
 main, header, nav, article, aside, footer, section {
-  background-color: #D7D6CA;
+  background-color: #ffffff;
   padding: 1%;
 }
 
 h1 {
   flex: 5;
-  font-style: italic;
+  text-transform: uppercase;
 }
 
 
@@ -85,7 +85,6 @@ nav li {
   display: inline;
   text-align: center;
   flex: 1;
-
 }
 
 nav a, nav span {
@@ -96,14 +95,12 @@ nav a, nav span {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-    color: #A49077;
 
 }
 
 
 main {
   display: flex;
-
 }
 
 article {
@@ -112,32 +109,22 @@ article {
 
 aside {
   flex: 1;
-  margin-left: 7px;
-
+  margin-left: 10px;
   padding: 1%;
-
 }
 
 aside a {
   display: block;
   float: left;
-  width: 70%;
-  margin-left: 23px;
-
+  width: 50%;
 }
 
 aside img {
-
   max-width: 100%;
 }
 
 footer {
+  font-size: 0.5rem;
+  text-align: center;
   margin-top: 10px;
-}
-
-
-a {
-  color: #A49077;
-  font-weight: bold;
-  text-decoration: none;
 }
