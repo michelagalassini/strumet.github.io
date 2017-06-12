@@ -18,8 +18,10 @@ function readTextFile(file){
 	return text
 }
 
-var css = readTextFile("https://strumet.github.io/style.css");
-
+// if working in local don't use published style
+var href = window.location.href;
+var css = href.indexOf('/mf/') < 0 ? readTextFile("https://strumet.github.io/style.css") :
+	'';
 
 menu = {'Home':'',
 	'Monterrey Duplex': 'MO-D',
