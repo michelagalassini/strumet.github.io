@@ -12,11 +12,30 @@ html {
 body {
      font-family: 'Advent Pro';
 }
-a{
-color: inherit;
+
+div.align{
+  float: left;
+  clear: none; 
 }
 
-div.mondo{
+a{
+color: inherit;
+text-decoration:none;
+}
+
+span.elenco{
+  position: absolute;
+  background: #ABCDEF;
+  width: auto;
+  height: auto;
+  font-size: 250%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.all{
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
@@ -28,12 +47,12 @@ h1{
   text-align: center;
 }
 
-div.pan{
+span.pan{
+	content:url(imm/panoramica.jpg);
     position: relative;
-    top: 0;
-    bottom: 0;
-    left: 10%;
-    right: 0;
+	-webkit-box-align:center;
+    -webkit-box-pack:center;
+    display:-webkit-box;
     max-width: 100%;
     margin: auto;
     overflow: auto;
@@ -42,19 +61,13 @@ div.pan{
 p.descrizione{
   position: relative;
   font-size: 180%;
-  margin-top: 7%;
+  margin-top: 6%;
   font-style: italic;
-}
-
-div.elenco{
-  position: fixed;
-  font-size: 200%;
-  margin-top: 8%;
-  margin-left: 3%;
 }
 
 span.foto1{
   content:url(imm/frontale.jpg);
+  margin-top: 6%;
   width: 47%;
 }
 span.foto2{
@@ -73,4 +86,36 @@ span.foto4{
   width: 40%;
   margin-top: 3%;
   margin-left: 9%;
+}
+
+div.proposta{
+	position: relative;
+	font-weight: bold;
+	font-size: 400%;
+	text-align: center;
+	margin-top: 6%;
+}
+
+div.prop1{
+  content:url(imm/prop0001_opt.jpg);
+  margin-top: 6%;
+  position: relative;
+  max-width:100%;
+  max-height:100%;
+}
+
+div.prop2{
+  content:url(imm/prop0002_opt.jpg);
+  margin-top: 2%;
+  max-width:100%;
+  max-height:100%;
+}
+
+div.prop3{
+  content:url(imm/prop0003_opt.jpg);
+  margin-top: 2%;
+  position: relative;
+  max-width:100%;
+  max-height:100%;
+  padding-bottom: 2%;
 }
