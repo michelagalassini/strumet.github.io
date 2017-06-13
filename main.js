@@ -61,6 +61,7 @@ li_top = Object.keys(menu).map(function (x) {
 
 
 header = document.createElement("header");
+header.id = "strumet_header";
 footer = document.createElement("footer");
 footer.innerHTML = "<h3><em>-- footer will be here --</em></h3>";
 
@@ -73,6 +74,12 @@ header.appendChild(nav);
 document.body.insertBefore(header, document.body.firstChild);
 document.body.appendChild(footer);
 
+link_style = document.createElement("link");
+link_style.rel = 'stylesheet';
+link_style.href = css;
+document.head.appendChild(link_style);
+
+
 for (key in menu) {
 	if (menu[key] != ''){
 		elId = 'ul_sub_' + menu[key];
@@ -83,7 +90,3 @@ for (key in menu) {
 			"top: " + li.offsetHeight + "px";
 	}
 }
-
-style = document.createElement("style");
-style.innerHTML = css
-document.head.appendChild(style);
