@@ -25,6 +25,37 @@ p, input, li {
   color: #2a2a2a;
 }
 
+ul#menu {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    list-style:none;
+
+}
+
+ul#menu li {
+    background-color: #ffffff;
+    border-left: 5px solid #faf0e6;
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: 7px 0;
+}
+
+ul#menu li a {
+    color: black;
+    display: block;
+    font-weight: normal;
+    line-height: 17px;
+    padding-left: 15px;
+    text-decoration: none;
+    width: 135px;
+    height: 30px;
+    clear: left;
+
+}
+
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -112,6 +143,9 @@ aside {
   margin-left: 10px;
   padding: 1%;
 }
+
+
+
 
 aside a {
   display: block;
