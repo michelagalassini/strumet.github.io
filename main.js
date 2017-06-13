@@ -18,7 +18,6 @@ function readTextFile(file){
 	return text
 }
 
-// if working in local don't use published style
 var href = window.location.href;
 var css = "https://strumet.github.io/style.css";
 
@@ -70,22 +69,26 @@ nav.appendChild(ul__nav);
 header.appendChild(nav);
 
 
-document.body.insertBefore(header, document.body.firstChild);
-document.body.appendChild(footer);
 
 link_style = document.createElement("link");
 link_style.rel = 'stylesheet';
 link_style.href = css;
 document.head.appendChild(link_style);
+document.body.insertBefore(header, document.body.firstChild);
+document.body.appendChild(footer);
 
 
-for (key in menu) {
-	if (menu[key] != ''){
-		elId = 'ul_sub_' + menu[key];
-		liId = 'li_top_' + menu[key];
-		el = document.getElementById(elId);
-		li = document.getElementById(liId);
-		el.style = "width: " + li.offsetWidth + "px;" +
-			"top: " + li.offsetHeight + "px";
+function set_menu_position() {
+	for (key in menu) {
+		if (menu[key] != ''){
+			ulId = 'ul_sub_' + menu[key];
+			liId = 'li_top_' + menu[key];
+			ul = document.getElementById(ulId);
+			li = document.getElementById(liId);
+			ul.style = "width: " + li.offsetWidth + "px;" +
+				"top: " + li.offsetHeight + "px";
+		}
 	}
 }
+
+window.onload = set_menu_position;

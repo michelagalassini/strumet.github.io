@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i');
 
 #strumet_header h1 {
-  font-weight: 300;
-  letter-spacing: .1em;
-  font-size: 2.25em;
-  margin: 10px 0 5px;
+	font-weight: 300;
+	letter-spacing: .1em;
+	font-size: 2.25em;
+	margin: 10px 0 5px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-#strumet_header a:link, a:visited {
+#strumet_header a:link,
+#strumet_header a:visited {
 	color: #272727;
 }
 
-#strumet_header a:hover, a:active {
+#strumet_header a:hover,
+#strumet_header a:active {
 	color: rgb(127, 127, 127);
 }
 
