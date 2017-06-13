@@ -1,4 +1,56 @@
+<<<<<<< HEAD
 h1 {
   color: red;
   font-style: italic;
 }
+=======
+< HEAD
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 15px;
+  background-color: #000000;
+}
+
+h3{
+  font-family: 'myriad pro light';
+  color: white;
+  font-style: normal;
+}
+
+
+
+#primo_h1, p {
+  font-family: 'myriad pro light';
+  color: white;
+  text-align: center;
+}
+
+p.seconda_parte {
+  font-family: sans-serif;
+}
+
+p > strong {
+  color: yellow
+}
+
+p em {
+  font-variant: small-caps;
+}
+========
+h1{
+  color: white;
+}
+
+li {
+  text-color: yellow;
+}
+
+img {
+  max-height: 150px;
+}
+> origin/master
+>>>>>>> 2487b8d4d12984c81be840560a32431f261d620b
