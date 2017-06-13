@@ -2,10 +2,17 @@ body{
 	background: lavender
 }
 
+head {
+	<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200');
+</style>
+}
+
 h1{
-	font: helvetica ;
-	font-size: 50px;
-	color: black;
+	font-family: 'Montserrat', cursive, sans-serif;
+display: center;
+	font-size: 60px;
+	color: dimgrey;
 	text-align: center;
 }
 strong {
@@ -23,6 +30,7 @@ nav ul ul {
 		display: block;
 	}
 	nav ul {
+	font-family: 'Montserrat', sans-serif;
 	background: #efefef;
 	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
 	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
