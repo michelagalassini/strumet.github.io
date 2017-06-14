@@ -1,22 +1,27 @@
 
+
 html, body {
     margin-top: 10px;
-		margin-right: 40px;
+		margin-right: 30px;
 		margin-bottom: 10px;
-		margin-left: 40px;
+		margin-left: 30px;
 }
 
 h1#prima_parte {
   border-width: thin;
   color: green;
-  font-weight: bold;
+  font-weight:normal;
   font-size: 50px
 
 
 
 
-
 }
+html {
+  font-style: normal;
+}
+
+
 
 h2 {
   color:grey;
@@ -47,12 +52,5 @@ figcaption.seconda_didascalia {
 }
 
 img.immagini {
-  height: 350px
-
-
-}
-
-
-
-
+  height: 340px
 }
