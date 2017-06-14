@@ -1,17 +1,27 @@
 <<<<<<< HEAD
-h1{
-  color: red;
-  font-style: italic;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-p{
-  background: #ffff00;
+html{
+  font-size: 15px;
+  background-color:#a0e248;
 }
+
+h3{
+  font-family:'Myriad Pro Light';
+  color:black;
+  font-style: normal;
+  text-align: center;
+}
+
+
 
 #primo_h1, p {
-  border-width: medium;
-  border-color: black;
-  border-style: solid;
+  font-family: 'Myriad Pro Light';
+  color: black;
+  text-align: center;
 }
 
 p.seconda_parte {
@@ -19,7 +29,7 @@ p.seconda_parte {
 }
 
 p > strong {
-  color: green
+  color: #383838;
 }
 
 p  em {
@@ -28,5 +38,10 @@ p  em {
 =======
 h1{
   color: red;
+}
+
+img {
+  max-height: 200px;
+
 }
 >>>>>>> origin/master
