@@ -1,50 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i');
 
-body {
-	margin: 0px;
+#strumet_header h1 {
+	font-weight: 300;
+	letter-spacing: .1em;
+	font-size: 2.25em;
+	margin: 10px 0 5px;
 	font-family: 'Open Sans', sans-serif;
+}
+
+#strumet_header a:link,
+#strumet_header a:visited {
 	color: #272727;
 }
 
-
-h1 {
-  font-weight: 300;
-  letter-spacing: .1em;
-  font-size: 2.25em;
-  margin: 10px 0 5px;
-}
-
-a:link, a:visited {
-	color: #272727;
-}
-
-a:hover, a:active {
+#strumet_header a:hover,
+#strumet_header a:active {
 	color: rgb(127, 127, 127);
 }
 
-p.subheading {
+#strumet_header p.subheading {
 	letter-spacing: 0.1em;
 	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 0px;
 }
 
-p.subheading em {
+#strumet_header p.subheading em {
 	font-size: 12px;
 }
 
-header {
+#strumet_header{
 	text-align: center;
 	padding: 10px;
 	border: solid #272727;
 	border-width: 0 0 1px 0;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	color: #272727;
+	background: white;
 }
 
-nav {
+#strumet_header nav {
 	display: inline-block;
 	margin: 0 auto;
 }
 
-ul#nav {
+#strumet_header ul#nav {
 	padding: 0;
 	list-style: none;
 	position: relative;
@@ -52,70 +52,70 @@ ul#nav {
 	z-index: 500;
 }
 
-#nav li.top {
+#strumet_header #nav li.top {
 	display: block;
 	float: left;
 	margin: 0 1px;
 	background: #fff;
 }
 
-#nav li a.top_link {
+#strumet_header #nav li a.top_link {
 	display: block;
 	float: left;
 	cursor: pointer;
 }
 
 
-#nav li a.top_link span {
+#strumet_header #nav li a.top_link span {
 	float:left;
 	display:block;
 	padding:0 24px;
 }
 
 
-#nav li:hover {
+#strumet_header #nav li:hover {
 	position:relative;
 	z-index:200;
 }
 
 
-#nav li:hover ul.sub {
+#strumet_header #nav li:hover ul.sub {
 	z-index:300;
 	top: 0;
 	left: 0px;
 	display: block;
 }
 
-#nav li:hover ul.sub li {
+#strumet_header #nav li:hover ul.sub li {
 	display:block;
 	position:relative;
 }
 
-#nav li:hover ul.sub li a {
+#strumet_header #nav li:hover ul.sub li a {
 	display:block;
 }
 
-#nav li ul.sub li a.fly {
+#strumet_header #nav li ul.sub li a.fly {
 	background: white;
 }
-#nav li:hover ul.sub li a:hover,
-#nav li:hover ul.sub li a.fly:hover {
+#strumet_header #nav li:hover ul.sub li a:hover,
+#strumet_header #nav li:hover ul.sub li a.fly:hover {
 	background: rgba(187, 187, 187, 1);
 	color:#fff;
 	}
 
-#nav ul,
-#nav li:hover ul ul,
-#nav li:hover li:hover ul ul,
-#nav li:hover li:hover li:hover ul ul,
-#nav li:hover li:hover li:hover li:hover ul ul {
+#strumet_header #nav ul,
+#strumet_header #nav li:hover ul ul,
+#strumet_header #nav li:hover li:hover ul ul,
+#strumet_header #nav li:hover li:hover li:hover ul ul,
+#strumet_header #nav li:hover li:hover li:hover li:hover ul ul {
     position: absolute;
 	display: none;
     padding: 0;
     list-style: none;
 }
 
-#nav li:hover ul.sub li a {
+#strumet_header #nav li:hover ul.sub li a {
     display: block;
     font-size: 11px;
     height: 18px;

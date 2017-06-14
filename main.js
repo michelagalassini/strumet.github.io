@@ -18,10 +18,8 @@ function readTextFile(file){
 	return text
 }
 
-// if working in local don't use published style
 var href = window.location.href;
-var css = href.indexOf('/mf/') < 0 ? readTextFile("https://strumet.github.io/style.css") :
-	'';
+var css = "https://strumet.github.io/style.css";
 
 menu = {'Home':'',
 	'Monterrey Duplex': 'MO-D',
@@ -61,6 +59,7 @@ li_top = Object.keys(menu).map(function (x) {
 
 
 header = document.createElement("header");
+header.id = "strumet_header";
 footer = document.createElement("footer");
 footer.innerHTML = "<h3><em>-- footer will be here --</em></h3>";
 
@@ -70,20 +69,26 @@ nav.appendChild(ul__nav);
 header.appendChild(nav);
 
 
+
+link_style = document.createElement("link");
+link_style.rel = 'stylesheet';
+link_style.href = css;
+document.head.appendChild(link_style);
 document.body.insertBefore(header, document.body.firstChild);
 document.body.appendChild(footer);
 
-for (key in menu) {
-	if (menu[key] != ''){
-		elId = 'ul_sub_' + menu[key];
-		liId = 'li_top_' + menu[key];
-		el = document.getElementById(elId);
-		li = document.getElementById(liId);
-		el.style = "width: " + li.offsetWidth + "px;" +
-			"top: " + li.offsetHeight + "px";
+
+function set_menu_position() {
+	for (key in menu) {
+		if (menu[key] != ''){
+			ulId = 'ul_sub_' + menu[key];
+			liId = 'li_top_' + menu[key];
+			ul = document.getElementById(ulId);
+			li = document.getElementById(liId);
+			ul.style = "width: " + li.offsetWidth + "px;" +
+				"top: " + li.offsetHeight + "px";
+		}
 	}
 }
 
-style = document.createElement("style");
-style.innerHTML = css
-document.head.appendChild(style);
+window.onload = set_menu_position;

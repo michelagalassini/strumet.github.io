@@ -1,0 +1,56 @@
+
+
+html, body {
+    margin-top: 10px;
+		margin-right: 30px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+}
+
+h1#prima_parte {
+  border-width: thin;
+  color: green;
+  font-weight:normal;
+  font-size: 50px
+
+
+
+
+}
+html {
+  font-style: normal;
+}
+
+
+
+h2 {
+  color:grey;
+}
+
+ul {
+  color:grey;
+}
+
+div {
+  color: black;
+}
+h3,h5 {
+  color: green;
+  font-weight: bold;
+  font-size: 30px
+}
+
+figure {
+  display:inline-block;
+}
+
+figcaption.seconda_didascalia {
+  position:absolute;
+  align: center
+  font-style:italic;
+  font-size: 12px
+}
+
+img.immagini {
+  height: 340px
+}
