@@ -126,3 +126,9 @@
 	background: rgba(227, 227, 227, 1);
 	margin: 1px 0;
 }
+
+#strumet_footer {
+	clear: both;
+	width: 100%;
+	display:block;
+}

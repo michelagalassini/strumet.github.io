@@ -1,0 +1,21 @@
+#strumet_main {
+	text-align: center;
+}
+
+#strumet_main ul{
+	margin: 0 auto;
+	clear:both;
+	display: inline-block;
+}
+
+#strumet_main li{
+	list-style: none;
+	float: left;
+}
+
+#strumet_main img{
+	width: 200px;
+	height: 200px;
+}
+
+

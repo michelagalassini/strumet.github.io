@@ -3,35 +3,20 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Test page</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="home.css">
 	</head>
 	<body>
-		<main>
-			<h1>Hello world!</h1>
-			<p>This is my page</p>
-			<ul>
-				<li><a href="projects/MO-D_1/index.html">MO-D_1</a></li>
-				<li><a href="projects/MO-D_2/index.html">MO-D_2</a></li>
-				<li><a href="projects/MO-D_3/index.html">MO-D_3</a></li>
-				<li><a href="projects/MO-D_4/index.html">MO-D_4</a></li>
-				<li><a href="projects/MO-S_1/index.html">MO-S_1</a></li>
-				<li><a href="projects/MO-S_2/index.html">MO-S_2</a></li>
-				<li><a href="projects/MO-S_3/index.html">MO-S_3</a></li>
-				<li><a href="projects/MO-S_4/index.html">MO-S_4</a></li>
-				<li><a href="projects/QM-D_1/index.html">QM-D_1</a></li>
-				<li><a href="projects/QM-D_2/index.html">QM-D_2</a></li>
-				<li><a href="projects/QM-D_3/index.html">QM-D_3</a></li>
-				<li><a href="projects/QM-D_4/index.html">QM-D_4</a></li>
-				<li><a href="projects/QM-S_1/index.html">QM-S_1</a></li>
-				<li><a href="projects/QM-S_2/index.html">QM-S_2</a></li>
-				<li><a href="projects/QM-S_3/index.html">QM-S_3</a></li>
-				<li><a href="projects/QM-S_4/index.html">QM-S_4</a></li>
-				<li><a href="projects/VV-D_1/index.html">VV-D_1</a></li>
-				<li><a href="projects/VV-D_2/index.html">VV-D_2</a></li>
-				<li><a href="projects/VV-D_3/index.html">VV-D_3</a></li>
-				<li><a href="projects/VV-D_4/index.html">VV-D_4</a></li>
-			</ul>
-		</main>
 		<script src="main.js"></script>
+		<script>
+
+	var main = document.createElement("main");
+	main.id = "strumet_main";
+	//var ul_tmb = document.createElement("ul");
+	//ul_tmb.innerHTML = thumbs;
+	main.innerHTML = thumbs;
+	//main.appendChild(ul_tmb);
+	document.body.insertBefore(main, footer);
+
+		</script>
 	</body>
 </html>
