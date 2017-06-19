@@ -1,3 +1,43 @@
+/*\
+|*|
+|*|  IE-specific polyfill that enables the passage of arbitrary arguments to the
+|*|  callback functions of javascript timers (HTML5 standard syntax).
+|*|
+|*|  https://developer.mozilla.org/en-US/docs/Web/API/window.setInterval
+|*|  https://developer.mozilla.org/User:fusionchess
+|*|
+|*|  Syntax:
+|*|  var timeoutID = window.setTimeout(func, delay[, param1, param2, ...]);
+|*|  var timeoutID = window.setTimeout(code, delay);
+|*|  var intervalID = window.setInterval(func, delay[, param1, param2, ...]);
+|*|  var intervalID = window.setInterval(code, delay);
+|*|
+\*/
+
+if (document.all && !window.setTimeout.isPolyfill) {
+  var __nativeST__ = window.setTimeout;
+  window.setTimeout = function (vCallback, nDelay /*, argumentToPass1, argumentToPass2, etc. */) {
+    var aArgs = Array.prototype.slice.call(arguments, 2);
+    return __nativeST__(vCallback instanceof Function ? function () {
+      vCallback.apply(null, aArgs);
+    } : vCallback, nDelay);
+  };
+  window.setTimeout.isPolyfill = true;
+}
+
+if (document.all && !window.setInterval.isPolyfill) {
+  var __nativeSI__ = window.setInterval;
+  window.setInterval = function (vCallback, nDelay /*, argumentToPass1, argumentToPass2, etc. */) {
+    var aArgs = Array.prototype.slice.call(arguments, 2);
+    return __nativeSI__(vCallback instanceof Function ? function () {
+      vCallback.apply(null, aArgs);
+    } : vCallback, nDelay);
+  };
+  window.setInterval.isPolyfill = true;
+}
+////////////////////////////////////////////////////////////////
+
+
 function readTextFile(file){
 	var text = '1'
     var rawFile = new XMLHttpRequest();
@@ -16,6 +56,7 @@ function readTextFile(file){
     rawFile.send(null);
 	return text
 }
+
 
 var href = window.location.href;
 var root_end = 'strumet.github.io/'.length;
@@ -95,14 +136,54 @@ function set_menu_position() {
 
 window.onload = set_menu_position;
 
+img_url = function(x,y) {
+	var url = 'img/' + menu[x] + '_' + y +'.jpg';
+	return url;
+}
+
+var interv; 
+var start_size = 200;
+var max_size = 224;
+//TODO: create an array of temp_size (maybe an object useful also for menu obj) for each fig
+//fix independent interv and collect object (menu, project, prj)
+var temp_size = start_size;
+
+project = Object.keys(menu).map(function (x) {
+	return menu[x] == '' ? '' : range_4.map(function (y) {
+		return menu[x] + '_' + y;
+	});
+}).filter(function(z){
+	return z != '';
+});
+
+var prj = {};
+
+//for (i=0; i<project.length; i++) {
+//	for (j=0; j<project[i].length; j++) {
+//		prj[project[i][j]] = [200,''];
+//	}
+//}
+
+
 thumbs = Object.keys(menu).map(function (x) {
 	return menu[x] == '' ? '' : '<ul class="ul_tmb">' + range_4.map(function (y) {
 		return '<li class="li_tmb">' +
-			'<fig class="fig_tmb" id="fig_tmb_' + menu[x] + '_' + y + '">' +
-				'<a class="tmb_link "href="' + root_folder + 'projects/' +
+			'<figure class="fig_tmb" id="fig_tmb_' + menu[x] + '_' + y +
+			'" style="background-image: url(\'' + img_url(x,y) + '\')">' +
+				'<a class="a_tmb" href="' + root_folder + 'projects/' +
 		   			menu[x] + '_' + y + '/index.html">' +
-					'<img class="img_tmb" id="img_tmb_' + menu[x] + '_' + y + '" src="' +
-						root_folder + 'img/' + menu[x] + '_' + y + '.jpg">' +
-			'</a></fig></li>';
+					'<div class="div_tmb"></div>' +
+					'<figcaption id="cpt_tmb_' + menu[x] + '_' + y + '">' +
+					menu[x] + '_' + y + '</figcaption>' +
+			'</a></figure></li>';
 	}).join('') + '</ul>';
 }).join('');
+
+function fix_caption() {
+	for (i=0; i<project.length; i++){
+		for (j=0; j<project[i].length; j++){
+			cpt = document.getElementById('cpt_tmb_' + project[i][j]);
+			cpt.style.bottom = cpt.offsetHeight + 'px';
+		}
+	}
+}
