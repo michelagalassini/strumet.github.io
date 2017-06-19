@@ -130,5 +130,14 @@
 #strumet_footer {
 	clear: both;
 	width: 100%;
-	display:block;
+	display: inline inline-block;
+	border: solid #272727;
+	border-width: 1px 0 0 0;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #272727;
+	background: white;
 }
+

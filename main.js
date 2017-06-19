@@ -64,50 +64,60 @@ var root_start = href.indexOf('strumet.github.io/');
 var root_folder = href.substring(0, root_start + root_end);
 var css = root_folder + "style.css";
 
-menu = {'Home':'',
-	'Monterrey Duplex': 'MO-D',
-	'Monterrey Simplex': 'MO-S',
-	'Quinta Monroy Duplex': 'QM-D',
-	'Quinta Monroy Simplex': 'QM-S',
-	'Villa Verde Duplex': 'VV-D',
-	'About':''
+var range_4 = [1, 2, 3, 4];
+
+var prj_group = {
+	'Monterrey Duplex': {'label': 'MO-D'},
+	'Monterrey Simplex': {'label': 'MO-S'},
+	'Quinta Monroy Duplex': {'label': 'QM-D'},
+	'Quinta Monroy Simplex': {'label': 'QM-S'},
+	'Villa Verde Duplex': {'label': 'VV-D'}
 };
-range_4 = [1, 2, 3, 4];
 
+for (g in prj_group) {
+	prj_group[g].groups = range_4.map(function (x) {
+		return prj_group[g].label + '_' + x;
+	});
+}
 
-title = '<h1>designing increments</h1>' +
-	'<p class="subheading">20 interior design proposals ' +
-	'for incremental houses<br>' + 
+var title = '<h1>designing increments</h1>' +
+	'<p class="subheading">20 interior design proposals for incremental houses<br>' + 
 	'<em>(an course assignment)</em></p>';
 
-li_fly = function (x) {
-	return x == '' ? '' : range_4.map(function (y) {
-		return '<li><a href="' + root_folder + 'projects/' + x + '_' + y +
-			'/index.html" class="fly">' +
-			x + '_' + y + '</a></li>';
+var ul_first_li_top = '<li id="li_top_home" class="top">' +
+		'<a href="#" class="top_link"><span>Home</span></a></li>';
+
+var ul_last_li_top = '<li id="li_top_about" class="top">' +
+		'<a href="#" class="top_link"><span>About</span></a></li>';
+
+
+var li_fly = function (x) {
+	return prj_group[x].groups.map(function (y) {
+		return '<li><a href="' + root_folder + 'projects/' + y +
+			'/index.html" class="fly">' + y + '</a></li>';
 	}).join('');
 };
 
-li_top = Object.keys(menu).map(function (x) {
-	return '<li id="li_top_' + menu[x] + '" class="top">' +
-		'<a href="#" class="top_link">' +
-		'<span>' + x + '</span></a>' +
-		'<ul id="ul_sub_' + menu[x] + '" class="sub">' +
-		li_fly(menu[x]) + '</ul></li>';
-}).join('');
+var li_top = ul_first_li_top +
+	Object.keys(prj_group).map(function (x) {
+	return '<li id="li_top_' + prj_group[x].label + '" class="top">' +
+		'<a href="#" class="top_link"><span>' + x + '</span></a>' +
+		'<ul id="ul_sub_' + prj_group[x].label + '" class="sub">' +
+		li_fly(x) + '</ul></li>';
+}).join('') + ul_last_li_top;
 
 
-nav = document.createElement("nav");
-ul__nav = document.createElement("ul");
+var nav = document.createElement("nav");
+var ul__nav = document.createElement("ul");
 ul__nav.id = 'nav';
 
-header = document.createElement("header");
+var header = document.createElement("header");
 header.id = "strumet_header";
-footer = document.createElement("footer");
+var footer = document.createElement("footer");
 footer.id = "strumet_footer";
 footer.innerHTML = "<h3><em>-- footer will be here --</em></h3>";
 
-link_style = document.createElement("link");
+var link_style = document.createElement("link");
 link_style.rel = 'stylesheet';
 link_style.href = css;
 
@@ -120,69 +130,35 @@ document.head.appendChild(link_style);
 document.body.insertBefore(header, document.body.firstChild);
 document.body.appendChild(footer);
 
-
 function set_menu_position() {
-	for (key in menu) {
-		if (menu[key] != ''){
-			ulId = 'ul_sub_' + menu[key];
-			liId = 'li_top_' + menu[key];
-			ul = document.getElementById(ulId);
-			li = document.getElementById(liId);
-			ul.style = "width: " + li.offsetWidth + "px;" +
-				"top: " + li.offsetHeight + "px";
-		}
+	for (key in prj_group) {
+		ulId = 'ul_sub_' + prj_group[key].label;
+		liId = 'li_top_' + prj_group[key].label;
+		ul = document.getElementById(ulId);
+		li = document.getElementById(liId);
+		ul.style = "width: " + li.offsetWidth + "px;" +
+			"top: " + li.offsetHeight + "px";
 	}
 }
 
 window.onload = set_menu_position;
 
-img_url = function(x,y) {
-	var url = 'img/' + menu[x] + '_' + y +'.jpg';
-	return url;
-}
-
-var interv; 
-var start_size = 200;
-var max_size = 224;
-//TODO: create an array of temp_size (maybe an object useful also for menu obj) for each fig
-//fix independent interv and collect object (menu, project, prj)
-var temp_size = start_size;
-
-project = Object.keys(menu).map(function (x) {
-	return menu[x] == '' ? '' : range_4.map(function (y) {
-		return menu[x] + '_' + y;
-	});
-}).filter(function(z){
-	return z != '';
-});
-
-var prj = {};
-
-//for (i=0; i<project.length; i++) {
-//	for (j=0; j<project[i].length; j++) {
-//		prj[project[i][j]] = [200,''];
-//	}
-//}
-
-
-thumbs = Object.keys(menu).map(function (x) {
-	return menu[x] == '' ? '' : '<ul class="ul_tmb">' + range_4.map(function (y) {
+var thumbs = Object.keys(prj_group).map(function (x) {
+	return '<ul class="ul_tmb">' + prj_group[x].groups.map(function (y) {
 		return '<li class="li_tmb">' +
-			'<figure class="fig_tmb" id="fig_tmb_' + menu[x] + '_' + y +
-			'" style="background-image: url(\'' + img_url(x,y) + '\')">' +
+			'<figure class="fig_tmb" id="fig_tmb_' + y +
+			'" style="background-image: url(\'img/' + y + '.jpg\')">' +
 				'<a class="a_tmb" href="' + root_folder + 'projects/' +
-		   			menu[x] + '_' + y + '/index.html">' +
-					'<div class="div_tmb"></div>' +
-					'<figcaption id="cpt_tmb_' + menu[x] + '_' + y + '">' +
-					menu[x] + '_' + y + '</figcaption>' +
+		   			y + '/index.html"><div class="div_tmb"></div>' +
+					'<figcaption id="cpt_tmb_' + y + '">' + y + '</figcaption>' +
 			'</a></figure></li>';
 	}).join('') + '</ul>';
 }).join('');
 
 function fix_caption() {
-	for (i=0; i<project.length; i++){
-		for (j=0; j<project[i].length; j++){
-			cpt = document.getElementById('cpt_tmb_' + project[i][j]);
+	for (i in prj_group) {
+		for (j=0; j<prj_group[i].groups.length; j++) {
+			cpt = document.getElementById('cpt_tmb_' + prj_group[i].groups[j]);
 			cpt.style.bottom = cpt.offsetHeight + 'px';
 		}
 	}
