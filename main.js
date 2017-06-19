@@ -82,7 +82,7 @@ for (g in prj_group) {
 
 var title = '<h1>designing increments</h1>' +
 	'<p class="subheading">20 interior design proposals for incremental houses<br>' + 
-	'<em>(an course assignment)</em></p>';
+	'<em>(a course assignment)</em></p>';
 
 var ul_first_li_top = '<li id="li_top_home" class="top">' +
 		'<a href="#" class="top_link"><span>Home</span></a></li>';
