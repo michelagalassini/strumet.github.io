@@ -47,9 +47,10 @@ h2{
 
 p1{
   font-family:sans-serif;
-  text-align:center;
   font-size:2rem;
-  line-height:normal;
+  line-height:normal
+  text-align:justify;
+
 }
 p2{
   font-family:sans-serif;
@@ -80,5 +81,5 @@ div {
     padding-right: 25px;
     padding-left:  25px;
     margin: 25px;
-    
+
 }
