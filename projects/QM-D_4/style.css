@@ -1,4 +1,32 @@
 body{
+<<<<<<< HEAD
+	background: lavender;
+}
+head {
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200');
+
+}
+
+	@font-face{  font-family: manifesto;
+    src: url(MANIFESTO.ttf);}
+		@font-face{  font-family: simplifica;
+	    src: url(SIMPLIFICA.ttf);}
+			@font-face{  font-family: aqua;
+		    src: url(aqua.ttf);}
+h1 {
+		text-align: right;
+  font-size: 60px;
+	color: purple;
+  width: 100%;
+ font-family: aqua;
+
+}
+
+header {
+ text-align: right;
+
+=======
 	background: lavender
 }
 head {
@@ -12,6 +40,7 @@ display: center;
 	font-size: 60px;
 	color: black;
 	text-align: center;
+>>>>>>> 287cc74d3f9d622b16a818b3c5e9b4c6197f2dce
 }
 nav ul ul {
 	display: none;
@@ -88,18 +117,32 @@ body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
+<<<<<<< HEAD
+	text-align: justify;
+=======
+>>>>>>> 287cc74d3f9d622b16a818b3c5e9b4c6197f2dce
 }
 
 
 
 h2 {
   font-size: 3rem;
+<<<<<<< HEAD
+  text-align: right;
+		font-family: manifesto;
+=======
   text-align: center;
+>>>>>>> 287cc74d3f9d622b16a818b3c5e9b4c6197f2dce
 }
 
 h3 {
   font-size: 2.2rem;
+<<<<<<< HEAD
+  text-align: right;
+		font-family: manifesto;
+=======
   text-align: center;
+>>>>>>> 287cc74d3f9d622b16a818b3c5e9b4c6197f2dce
 }
 
 p, li {
@@ -112,6 +155,10 @@ header {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
+<<<<<<< HEAD
+	text-align: center;
+=======
+>>>>>>> 287cc74d3f9d622b16a818b3c5e9b4c6197f2dce
 }
 
 body > * {
