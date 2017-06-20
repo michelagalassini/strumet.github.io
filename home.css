@@ -1,0 +1,64 @@
+#strumet_main {
+	text-align: center;
+}
+
+#strumet_main ul.ul_tmb{
+	margin: 0 auto;
+	clear:both;
+	display: inline-block;
+}
+
+#strumet_main li.li_tmb{
+	list-style: none;
+	float: left;
+	margin: 40px 25px 0 0;
+	background-image: url('img/missing.png');
+}
+
+#strumet_main figure.fig_tmb{
+	margin: 0;
+	width: 200px;
+	height: 200px;
+	display: block;
+	background-position: center;
+	background-size: 200px;
+	-webkit-transition: background-size 1s;
+	transition: background-size 1s;
+}
+
+#strumet_main figure.fig_tmb:hover{
+	background-size: 250px;
+}
+
+#strumet_main a.a_tmb{
+	text-decoration: none;
+}
+
+#strumet_main div.div_tmb{
+	width:200px;
+	height: 200px;
+	background-image: radial-gradient(circle 200px, rgba(0,0,0,0), rgba(0,0,0,0.5));
+	opacity: .2;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#strumet_main div.div_tmb:hover{
+	opacity: 1;
+}
+
+#strumet_main figure.fig_tmb figcaption{
+	color: white;
+	padding: 5px 0;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	background: black;
+	opacity: .25;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#strumet_main div.div_tmb:hover + figcaption{
+	opacity: .75;
+}
