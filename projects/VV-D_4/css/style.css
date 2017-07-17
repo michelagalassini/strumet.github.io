@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+html{
+background-image: -ms-linear-gradient(bottom top, #FFFFFF 0%, #AACFEF 100%);
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(bottom top, #FFFFFF 0%, #AACFEF 100%);
+/* Opera */
+background-image: -o-linear-gradient(bottom top, #FFFFFF 0%, #AACFEF 100%);
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(0.3, #b2ebf2), color-stop(1, #FFF));
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom top, #FFFFFF 0%, #AACFEF 100%);
+/* Regola standard */
+background-image: linear-gradient(to bottom top, #FFFFFF 0%, #AACFEF 100%);
+}
+ body {
+   font-family:'Quicksand', sans-serif;
+   margin:0 auto;
+   width: 80%;
+   font-size: 18px;
+ }
+#fixed-menu{
+  position: fixed;
+  top: 30%;
+  right: 0;
+  background: #e0f7fa;
+  padding: 2px 8px;
+  border: 1px solid #DEDEDE;
+}
+#elenco{
+  display: none;
+}
+#open-close-menu{
+  cursor: pointer;
+  float: right;
+  margin-left: 10px;
+  margin-top: 3px;
+}
+.casetta-home{
+  font-size: 22px;
+}
+
+h1 {
+  font-family:'Lobster', cursive;
+  color:#476b6b;
+  text-align: center;
+  text-shadow: 0px 0px #CCC;
+  font-size:50px;
+  }
+
+p.prima_descrizione{
+}
+
+p.seconda_descrizione{
+
+}
+
+#primo_h1{
+
+  border-bottom: 0.5px dashed #669999;
+}
+
+img.home{
+  width: 85%;
+}
+.pull-left{
+  float:left;
+}
+
+.pull-right{
+  float:right;
+}
+
+figcaption{
+  text-align: center;
+}
+
+.div-img{
+  width: 50%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.titoletti{
+  margin-top:10px;
+  text-shadow: 2px 0px #CCC;
+  text-align: left;
+  text-decoration: underline;
+
+}
+div#fixed-menu .titoletti{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+div#fixed-menu i{
+  font-size: 22px;
+}
+.div-parent-img{
+  display:table;
+  width:100%;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/*CLASSI VALERIA*/
+
+.paragrafo1{
+  margin-top:0;
+}
+
+
+.pianta{
+  width: 87%;
+  margin-left: 10px;
+}
+
+.descrizione{
+width:40%;
+float:left;
+}
+
+.stiledescrizione{
+  margin-top:0;
+}
+
+.tavola{
+  height:150px;
+  margin-bottom:5px;
+  float:left;
+}
+
+.div-tavole{
+  width:10%;
+}
+
+.foto{
+  margin-left:12.5%;
+}
+
+.titolimobili{
+  text-decoration: underline;
+}
+
+.margine{
+  margin-top: 30px;
+}
+
+.fase3{
+  width:25%;
+  margin-top:20px;
+}
+
+.sezioni{
+  margin-left:10px;
+  width:87%;
+}
+
+.tavola-arredi{
+  margin-left: 10px;
+}
+
+/*/*//*/*//*/*//*//**//*/*/

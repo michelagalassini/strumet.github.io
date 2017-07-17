@@ -1,0 +1,178 @@
+
+
+html, body {
+    margin-top: 10px;
+		margin-right: 30px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+}
+
+h1#prima_parte {
+  border-width: thin;
+  color: green;
+  font-weight:normal;
+  font-size: 30px
+
+
+}
+
+h1,  {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+a:link, a:visited {
+    text-decoration: underline;
+    color: grey;
+    background-color: transparent;
+}
+a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+html {
+  font-style: normal;
+}
+
+
+
+h2 {
+  color:grey;
+  font-family:sans-serif;
+  font-weight: normal;
+}
+
+ul {
+  color:grey;
+}
+
+div {
+  color: black;
+}
+h3,h5 {
+  color: green;
+  font-weight:normal;
+  font-size: 30px
+}
+
+figure {
+  display:inline-block;
+}
+
+figcaption.seconda_didascalia {
+  position:absolute;
+  align: center
+  font-style:italic;
+  font-size: 12px
+}
+
+img.immagini {
+  height: 340px
+}
+
+ul#menu {
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#menu li {
+    color: grey
+    display: block;
+    width: 150px;
+    height: 1px;
+    margin: 39px;
+    float: left; /* elementi su singola riga */
+}
+
+ul#menu li a {
+    font-weight:lighter;
+    color: grey
+    line-height: 30px;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+p {
+  text-align: justify;
+}
+
+strong {
+  color: grey
+}
+
+img#pianta {
+  margin-right: 25px
+
+
+}
+
+img#foto {
+  margin-left: 25px
+}
+
+p#prima_parte {
+  text-align: center;
+}
+
+
+img#foto_piccola {
+  height: 300px
+
+}
+
+figcaption#ikea {
+  font-size: 10px
+
+}
+
+h2#camera {
+  font-size: 20px
+
+}
+
+img#foto_grande {
+  height: 600px
+}
+
+
+img#foto_destra {
+  height: 249px
+}
+
+img#foto_media {
+  height: 500px
+
+}
+
+img#foto_grandissima {
+  height: 700px
+}
+
+h3 {
+  text-align: center;
+}
+
+figcaption.grande {
+  font-size: 15px
+
+}
+
+
+figcaption.grande {
+  text-align: center;
+
+}

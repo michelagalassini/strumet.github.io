@@ -63,6 +63,9 @@ var root_end = 'strumet.github.io/'.length;
 var root_start = href.indexOf('strumet.github.io/');
 var root_folder = href.substring(0, root_start + root_end);
 var css = root_folder + "style.css";
+var home_link = root_folder + "index.html";
+var about_link = root_folder + "about.html";
+var credits_link = root_folder + "credits.html";
 
 var range_4 = [1, 2, 3, 4];
 
@@ -80,15 +83,27 @@ for (g in prj_group) {
 	});
 }
 
+var footer_menu = {
+	'Home': home_link,
+	'About': about_link,
+	'Credits': credits_link
+};
+
+var li_footer = '<ul class="nav">' + Object.keys(footer_menu).map(function (x) {
+	return '<li class="top fixed_padding"><a class="top_link" href="' +
+		footer_menu[x] + '">' + x + '</a></li>';}).join('') + '</ul>';
+
+console.log(li_footer);
+
 var title = '<h1>designing increments</h1>' +
 	'<p class="subheading">20 interior design proposals for incremental houses<br>' + 
 	'<em>(a course assignment)</em></p>';
 
 var ul_first_li_top = '<li id="li_top_home" class="top">' +
-		'<a href="#" class="top_link"><span>Home</span></a></li>';
+		'<a href="' + home_link + '" class="top_link"><span>Home</span></a></li>';
 
 var ul_last_li_top = '<li id="li_top_about" class="top">' +
-		'<a href="#" class="top_link"><span>About</span></a></li>';
+		'<a href="' + about_link + '" class="top_link"><span>About</span></a></li>';
 
 
 var li_fly = function (x) {
@@ -101,7 +116,7 @@ var li_fly = function (x) {
 var li_top = ul_first_li_top +
 	Object.keys(prj_group).map(function (x) {
 	return '<li id="li_top_' + prj_group[x].label + '" class="top">' +
-		'<a href="#" class="top_link"><span>' + x + '</span></a>' +
+		'<a href="#" class="top_link def_cursor"><span>' + x + '</span></a>' +
 		'<ul id="ul_sub_' + prj_group[x].label + '" class="sub">' +
 		li_fly(x) + '</ul></li>';
 }).join('') + ul_last_li_top;
@@ -109,13 +124,15 @@ var li_top = ul_first_li_top +
 
 var nav = document.createElement("nav");
 var ul__nav = document.createElement("ul");
-ul__nav.id = 'nav';
+ul__nav.className = 'nav';
 
 var header = document.createElement("header");
+header.className = "strumet_header_footer";
 header.id = "strumet_header";
 var footer = document.createElement("footer");
+footer.className = "strumet_header_footer";
 footer.id = "strumet_footer";
-footer.innerHTML = "<h3><em>-- footer will be here --</em></h3>";
+footer.innerHTML = li_footer
 
 var link_style = document.createElement("link");
 link_style.rel = 'stylesheet';
@@ -130,8 +147,35 @@ document.head.appendChild(link_style);
 document.body.insertBefore(header, document.body.firstChild);
 document.body.appendChild(footer);
 
+var nav_width = 900;
+
 function set_menu_position() {
+	strumet_header = document.getElementById('strumet_header');
+	header_width = strumet_header.offsetWidth >= nav_width ? nav_width :
+		strumet_header.offsetWidth;
+	header_padding = window.getComputedStyle(strumet_header).getPropertyValue('padding-left');
+	header_padding_int = parseInt(header_padding.substring(0,header_padding.length));
+	header_width_net = header_width - (header_padding_int * 2);
+	//console.log(header_width);
+	//console.log(header_padding_int);
+	//console.log(header_width_net);
+	liTopHome = document.getElementById('li_top_home');
+	liTopAbout = document.getElementById('li_top_about');
+	actual_nav_width = liTopHome.offsetWidth + liTopAbout.offsetWidth;
 	for (key in prj_group) {
+		liTopId = 'li_top_' + prj_group[key].label;
+		liTop = document.getElementById(liTopId);
+		actual_nav_width += liTop.offsetWidth;
+	}
+	//console.log(actual_nav_width);
+	li_add_padding = Math.floor(((header_width_net - actual_nav_width) / 7 ) / 2) - 2;
+	//console.log(li_add_padding);
+	liTopHome.style = 'padding: 0 ' + li_add_padding + 'px;';
+	liTopAbout.style = 'padding: 0 ' + li_add_padding + 'px;';
+	for (key in prj_group) {
+		liTopId = 'li_top_' + prj_group[key].label;
+		liTop = document.getElementById(liTopId);
+		liTop.style = 'padding: 0 ' + li_add_padding + 'px;';
 		ulId = 'ul_sub_' + prj_group[key].label;
 		liId = 'li_top_' + prj_group[key].label;
 		ul = document.getElementById(ulId);

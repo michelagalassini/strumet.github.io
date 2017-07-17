@@ -2,23 +2,103 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Test page</title>
-		<link rel="stylesheet" href="style.css">
+		<title>AMBIENTE CAMERA</title>
+		<link href='https://fonts.googleapis.com/css?family=fantasy' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="Style.css">
+		<h1 id="primo_h1" class="prima_parte">AMBIENTE CAMERA</h1>
 	</head>
 	<body>
-<h1 id="primo_h1" class="prima_parte">Quinta Monroy Duplex-Camera da letto</h1>
-	<h2 id="prima parte">Proposta di arredo per la camera da letto</h2>
-	 <a href="QM-D_3_CAMERA.pdf"><img src="QM-D_3_CAMERA.jpg" alt="My test image"></a>
-	<h1 id="secondo_h1" class="seconda_parte">Complementi di arredo utilizzati</h1>
+		<div class="align">
+<span class="elenco">
+	<B>
+		<span class="home"> <a href="index.html"> Home </a> </span>
+		<span class="cucina">	<a href="QM-D_3_CUCINA.html"> Cucina </a> </span>
+	</B>
+	<span class="camera"> Camera </span>
+	<B>
+		<span class="studio">	<a href="QM-D_3_STUDIO.html"> Studio </a> </span>
+	</B>
+</span>
+	<div class="all">
+<h1 id="secondo_h1" class="seconda_parte">Proposta di arredo per la camera da letto</h1>
+<p class="seconda_parte">In questa sezione viene presentata la proposta di arredo per la camera da letto padronale, per questo ambiente sono stati scelti arredi prevalentemente
+in legno dalle forme semplici e dai colori neutri. Ogni prodotto riportato di seguito è corredato da foto e scheda tecnica consultabile direttamente dal sito del produttore e dalle relative tavole tecniche scaricabili liberamente.
+</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <a href="img camera/pianta.jpg"><img src="img camera/pianta.jpg" style="width:100%"></a>
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <a href="img camera/a.jpg"><img src="img camera/a.jpg" style="width:100%"></a>
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <a href="img camera/b.jpg"><img src="img camera/b.jpg" style="width:100%"></a>
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <a href="img camera/c.jpg"><img src="img camera/c.jpg" style="width:100%"></a>
+  </div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <a href="img camera/d.jpg"><img src="img camera/d.jpg" style="width:100%"></a>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<h1 id="secondo_h1" class="seconda_parte">Complementi di arredo utilizzati</h1>
 		<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/00185065/">Letto FJELLSE no.001.850.65 </a></h2>
-		 <a href="p5.pdf"><img src="FJELLSE no.001.850.65-1.jpg" alt="My test image"></a>
-		 <a href="p6.pdf"><img src="FJELLSE no.001.850.65-2.jpg" alt="My test image"></a>
+		 <a href="img camera/letto.jpg"><img src="img camera/letto.jpg" alt="My test image"></a>
+<p id=camera><a href="pdf camera/FJELLSE no.001.850.65.pdf" download="FJELLSE no.001.850.65.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
 			<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/70215525/?query=NESNA">Comodini NESNA no.702.155.25</a></h2>
-			 <a href="p7.pdf"><img src="NESNA no.702.155.25-1.jpg" alt="My test image"></a>
-			 <a href="p8.pdf"><img src="NESNA no.702.155.25-2.jpg" alt="My test image"></a>
+			 <a href="img camera/comodino.jpg"><img src="img camera/comodino.jpg" alt="My test image"></a>
+		   <p id=camera><a href="pdf camera/NESNA no.702.155.25.pdf" download="NESNA no.702.155.25.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
 				<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/10270807/">Guardaroba ASKVOLL no.102.708.07</a></h2>
-				<a href="p01.pdf"><img src="ASKVOLL no.102.708.07.jpg" alt="My test image"></a>
-				<a href="p02.pdf"><img src="ASKVOLL no.102.708.07-2.jpg" alt="My test image"></a>
+				<a href="img camera/armadio.jpg"><img src="img camera/armadio.jpg" alt="My test image"></a>
+				<p id=camera><a href="pdf camera/ASKVOLL no.102.708.07.pdf" download="ASKVOLL no.102.708.07.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
 				<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/40270820/">Cassettiera ASKVOLL no.402.708.20</a></h2>
-					<a href="p3.pdf"><img src="ASKVOLL no.402.708.20-1.jpg" alt="My test image"></a>
-						<a href="p4.pdf"><img src="p44.jpg" alt="My test image"></a>
+				<a href="img camera/cassettiera.jpg"><img src="img camera/cassettiera.jpg" alt="My test image"></a>
+        <p id=camera><a href="pdf camera/ASKVOLL no.402.708.20.pdf" download="ASKVOLL no.402.708.20.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+				<script src="https://strumet.github.io/main.js"></script>
+			</body>
+			</html>

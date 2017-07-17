@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+h1,h2,h3,h4{
+font-family:'Limelight', cursive;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+   background-color:#FFCC99;
+}
+body {
+  width: 90%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+ul{
+list-style-type:none;
+margin:1;
+padding:1;
+}
+ul{
+  font-size:2rem;
+  font-family:sans-serif;
+  text-align: center;
+}
+li
+{
+display:inline;
+}
+
+h1{
+  font-size:5rem;
+  text-align:center;
+  color:black;
+}
+h2{
+  text-align:center;
+  font-family:'Limelight', cursive;
+  font-size:3rem;
+  line-height:normal;
+}
+
+
+p1{
+  font-family:sans-serif;
+  font-size:2rem;
+  line-height:normal
+  text-align:justify;
+
+}
+p2{
+  font-family:sans-serif;
+  text-align:center;
+  font-size:2rem;
+  line-height:normal;
+  color:#009999;
+}
+
+p3{
+  font-family:'Limelight', cursive;
+  font-size:2rem;
+  line-height:normal
+  text-align:justify;
+}
+
+img{
+  max-width: 800px;
+  max-height: 800px;
+}
+img[class]{
+  width:180;
+  margin:10
+}
+object-fit_fill{
+  object-fit: fill
+}
+aside{
+  margin-top: 30;
+  text-align: center;
+
+}
+div {
+    width: 800px;
+    padding-right: 25px;
+    padding-left:  25px;
+    margin: 25px;
+
+}

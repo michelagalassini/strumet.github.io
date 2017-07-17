@@ -1,3 +1,5 @@
+/* STRUTTURA BASE PER TUTTI GLI HTML */
+
 @import url('https://fonts.googleapis.com/css?family=Advent Pro');
 html, body {
   margin: 0;
@@ -47,8 +49,9 @@ h1{
   text-align: center;
 }
 
-span.pan{
-	content:url(imm/panoramica.jpg);
+/* INDEX.html */
+
+span.pan > img{
     position: relative;
 	-webkit-box-align:center;
     -webkit-box-pack:center;
@@ -65,27 +68,30 @@ p.descrizione{
   font-style: italic;
 }
 
-span.foto1{
-  content:url(imm/frontale.jpg);
+span.foto1 > img{
   margin-top: 6%;
   width: 47%;
 }
-span.foto2{
-  content:url(imm/modifiche.jpg);
+span.foto2 > img{
   width: 47%;
   margin-bottom: 2%;
   margin-left: 2%;
 }
-span.foto3{
-  content:url(imm/interno01.jpg);
+span.foto3 > img{
   width: 47%;
   margin-bottom: 17%;
 }
-span.foto4{
-  content:url(imm/interno02.jpg);
+span.foto4 > img{
   width: 40%;
   margin-top: 3%;
   margin-left: 9%;
+}
+
+p.didascaliafoto{
+  position: relative;
+  font-size: 110%;
+  margin-top: 6%;
+  font-style: italic;
 }
 
 div.proposta{
@@ -96,29 +102,28 @@ div.proposta{
 	margin-top: 6%;
 }
 
-div.prop1{
-  content:url(imm/prop0001_opt.jpg);
+div.prop1 > img{
   margin-top: 6%;
   position: relative;
   max-width:100%;
   max-height:100%;
 }
 
-div.prop2{
-  content:url(imm/prop0002_opt.jpg);
+div.prop2 > img{
   margin-top: 2%;
   max-width:100%;
   max-height:100%;
 }
 
-div.prop3{
-  content:url(imm/prop0003_opt.jpg);
+div.prop3 > img{
   margin-top: 2%;
   position: relative;
   max-width:100%;
   max-height:100%;
   padding-bottom: 2%;
 }
+
+/* CAMERA.html */
 
 p.presentazione{
   position: relative;
@@ -127,10 +132,263 @@ p.presentazione{
   font-style: italic;
 }
 
-div.camera{
-content:url(imm/camera.jpg);
+div.camera > img{
   position: relative;
   max-width:70%;
   max-height:70%;
-  margin-left: 15%
+  margin-left: 15%;
+}
+
+div.camera1 > img{
+  position: relative;
+  max-width:70%;
+  max-height:70%;
+  margin-left: 15%;
+  margin-top: 6%;
+}
+
+p.descrizionecamera{
+  position: relative;
+  font-size: 180%;
+  margin-top: 6%;
+  font-style: italic;
+}
+
+p.arredi{
+  position: relative;
+  font-size: 250%;
+  margin-top: 6%;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.immSx{
+  overflow: hidden;
+  margin-top: 6%;
+  font-size: 170%;
+}
+
+img.imgSx{
+  float: left;
+  height: 60%;
+}
+
+span.nameSx{
+  margin-left: 3%;
+}
+
+span.descSx{
+  margin-left: 3%;
+  text-decoration: underline;
+}
+
+span.listaSx{
+  margin-left: 15%;
+}
+
+span.HEMNES_799-293-41-001 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:0%;
+    margin-top: 6%;
+}
+
+span.HEMNES_799-293-41-002 > img{
+      position: relative;
+      width:45%;
+      height:45%;
+      margin-left:9%;
+      margin-top: 6%;
+}
+
+div.immDx{
+  overflow: hidden;
+  margin-top: 6%;
+  font-size: 170%;
+}
+
+img.imgDx{
+  float: right;
+  height: 60%;
+}
+
+span.nameDx{
+  margin-left: 20%;
+}
+
+span.descDx{
+  margin-left: 20%;
+  text-decoration: underline;
+}
+
+span.listaDx{
+  margin-left: 40%;
+}
+
+span.HEMNES_202-004-56-001 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+span.HEMNES_502-512-70-001 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+
+span.TARVA_902-196-12-001 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:0%;
+    margin-top: 6%;
+}
+
+span.TARVA_902-196-12-002 > img{
+      position: relative;
+      width:45%;
+      height:45%;
+      margin-left:9%;
+      margin-top: 6%;
+}
+
+/* CUCINA.html */
+
+div.cucina > img{
+  position: relative;
+  max-width:70%;
+  max-height:70%;
+  margin-left: 15%;
+}
+
+span.METOD_799-180-45-A721 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:0%;
+    margin-top: 6%;
+}
+
+span.METOD_799-180-45-A722 > img{
+        position: relative;
+        width:45%;
+        height:45%;
+        margin-left:9%;
+        margin-top: 6%;
+}
+
+span.METOD_799-180-45-A723 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+
+span.KNOXHULT_703-268-06-A711 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:0%;
+    margin-top: 6%;
+}
+
+span.KNOXHULT_703-268-06-A712 > img{
+        position: relative;
+        width:45%;
+        height:45%;
+        margin-left:9%;
+        margin-top: 6%;
+}
+
+span.KNOXHULT_303-268-08-A701 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:0%;
+    margin-top: 6%;
+}
+
+span.KNOXHULT_303-268-08-A702 > img{
+        position: relative;
+        width:45%;
+        height:45%;
+        margin-left:9%;
+        margin-top: 6%;
+}
+
+span.KNOXHULT_303-268-08-A703 > img{
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+
+/* STUDIO.html */
+
+div.QM-D_2_STUDIO{
+content:url(imm/QM-D_2_STUDIO.jpg);
+  position: relative;
+  max-width:70%;
+  max-height:70%;
+  margin-left: 15%;
+}
+
+p.descrizionestudio{
+  position: relative;
+  font-size: 180%;
+  margin-top: 6%;
+  font-style: italic;
+}
+
+span.KALLAX_302-758-61 > img{
+  content:url(imm/KALLAX_302-758-61.jpg);
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+
+span.MICKE_902-130-78 > img{
+  content:url(imm/902-130-78-001.jpg);
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+
+span.MICKE_502-507-13-001 > img{
+  content:url(imm/MICKE_502-507-13-001.jpg);
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+
+span.LILLHOJDEN_402-387-12 > img{
+  content:url(imm/LILLHOJDEN_402-387-12.jpg);
+    position: relative;
+    width:45%;
+    height:45%;
+    margin-left:25%;
+    margin-top: 6%;
+}
+div.immmDx{
+  overflow: hidden;
+  margin-top: 6%;
+  font-size: 170%;
+}
+
+img.imggDx{
+  float: right;
+  height: 60%;
 }

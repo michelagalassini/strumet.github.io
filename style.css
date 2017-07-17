@@ -1,136 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i');
 
-#strumet_header h1 {
-	font-weight: 300;
-	letter-spacing: .1em;
-	font-size: 2.25em;
-	margin: 10px 0 5px;
-	font-family: 'Open Sans', sans-serif;
+#strumet_body{
+	margin: 0;
 }
 
-#strumet_header a:link,
-#strumet_header a:visited {
-	color: #272727;
-}
-
-#strumet_header a:hover,
-#strumet_header a:active {
-	color: rgb(127, 127, 127);
-}
-
-#strumet_header p.subheading {
-	letter-spacing: 0.1em;
-	font-family: Arial, Helvetica, sans-serif;
-	margin-top: 0px;
-}
-
-#strumet_header p.subheading em {
-	font-size: 12px;
-}
-
-#strumet_header{
+.strumet_header_footer{
 	text-align: center;
 	padding: 10px;
 	border: solid #272727;
-	border-width: 0 0 1px 0;
 	margin: 0px;
 	font-family: 'Open Sans', sans-serif;
+	font-size: initial;
 	color: #272727;
 	background: white;
-}
-
-#strumet_header nav {
-	display: inline-block;
-	margin: 0 auto;
-}
-
-#strumet_header ul#nav {
-	padding: 0;
-	list-style: none;
-	position: relative;
-	font-size: 12px;
-	z-index: 500;
-}
-
-#strumet_header #nav li.top {
-	display: block;
-	float: left;
-	margin: 0 1px;
-	background: #fff;
-}
-
-#strumet_header #nav li a.top_link {
-	display: block;
-	float: left;
-	cursor: pointer;
-}
-
-
-#strumet_header #nav li a.top_link span {
-	float:left;
-	display:block;
-	padding:0 24px;
-}
-
-
-#strumet_header #nav li:hover {
-	position:relative;
-	z-index:200;
-}
-
-
-#strumet_header #nav li:hover ul.sub {
-	z-index:300;
-	top: 0;
-	left: 0px;
 	display: block;
 }
 
-#strumet_header #nav li:hover ul.sub li {
-	display:block;
-	position:relative;
-}
-
-#strumet_header #nav li:hover ul.sub li a {
-	display:block;
-}
-
-#strumet_header #nav li ul.sub li a.fly {
-	background: white;
-}
-#strumet_header #nav li:hover ul.sub li a:hover,
-#strumet_header #nav li:hover ul.sub li a.fly:hover {
-	background: rgba(187, 187, 187, 1);
-	color:#fff;
-	}
-
-#strumet_header #nav ul,
-#strumet_header #nav li:hover ul ul,
-#strumet_header #nav li:hover li:hover ul ul,
-#strumet_header #nav li:hover li:hover li:hover ul ul,
-#strumet_header #nav li:hover li:hover li:hover li:hover ul ul {
-    position: absolute;
-	display: none;
-    padding: 0;
-    list-style: none;
-}
-
-#strumet_header #nav li:hover ul.sub li a {
-    display: block;
-    font-size: 11px;
-    height: 18px;
-    line-height: 18px;
-    text-indent: 5px;
-    color: #000;
-    text-decoration: none;
-	background: rgba(227, 227, 227, 1);
-	margin: 1px 0;
+#strumet_header{
+	border-width: 0 0 1px 0;
 }
 
 #strumet_footer {
 	clear: both;
 	width: 100%;
-	display: inline inline-block;
+	display: inline-block;
 	border: solid #272727;
 	border-width: 1px 0 0 0;
 	text-align: center;
@@ -141,3 +34,175 @@
 	background: white;
 }
 
+
+
+.strumet_header_footer h1 {
+	font-weight: 300;
+	letter-spacing: .1em;
+	font-size: 2.25em;
+	margin: 10px 0 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	color: black;
+}
+
+.strumet_header_footer a:link,
+.strumet_header_footer a:visited {
+	color: #272727;
+}
+
+.strumet_header_footer a:hover,
+.strumet_header_footer a:active {
+	color: rgb(127, 127, 127);
+}
+
+.strumet_header_footer p.subheading {
+	letter-spacing: 0.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	font-size: inherit;
+}
+
+.strumet_header_footer p.subheading em {
+	font-size: 12px;
+}
+
+
+.strumet_header_footer nav {
+	display: inline-block;
+	margin: 0 auto;
+	background-color: inherit;
+	height: inherit;
+	padding: 0px;
+}
+
+.strumet_header_footer ul.nav {
+	padding: 0;
+	list-style: none;
+	position: relative;
+	font-size: 12px;
+	z-index: 500;
+	font-family: unset;
+	display: inherit;
+}
+
+.strumet_header_footer .nav li.top {
+	display: block;
+	float: left;
+	margin: 0 1px;
+	background: #fff;
+	border: solid rgb(39, 39, 39);
+	border-width: 0 0 0 1px;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.strumet_header_footer .nav li.top:first-child {
+	border-width: 0 0 0 0;
+}
+
+.strumet_header_footer .nav li.fixed_padding {
+	padding: 0 12px;
+}
+
+
+.strumet_header_footer .nav li a.top_link {
+	display: block;
+	float: left;
+	cursor: pointer;
+	font-size: inherit;
+	height: inherit;
+	line-height: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	font-weight: inherit;
+}
+
+.strumet_header_footer .nav li a.def_cursor {
+	cursor: default;
+}
+
+.strumet_header_footer .nav li a.top_link span {
+	float:left;
+	display:block;
+	padding:0 4px;
+	font-size: inherit;
+	height: inherit;
+	line-height: inherit;
+	text-transform: inherit;
+	text-decoration: inherit;
+	color: inherit;
+}
+
+.strumet_header_footer .nav li:hover {
+	position:relative;
+	z-index:200;
+}
+
+
+.strumet_header_footer .nav li:hover ul.sub {
+	z-index:300;
+	top: 0;
+	left: 0px;
+	display: block;
+}
+
+.strumet_header_footer .nav li:hover ul.sub li {
+	display:block;
+	position:relative;
+}
+
+.strumet_header_footer .nav li:hover ul.sub li a {
+	display:block;
+}
+
+.strumet_header_footer .nav li ul.sub li a.fly {
+	background: white;
+}
+.strumet_header_footer .nav li:hover ul.sub li a:hover,
+.strumet_header_footer .nav li:hover ul.sub li a.fly:hover {
+	background: rgba(187, 187, 187, 1);
+	color:#fff;
+	}
+
+.strumet_header_footer .nav ul,
+.strumet_header_footer .nav li:hover ul ul,
+.strumet_header_footer .nav li:hover li:hover ul ul,
+.strumet_header_footer .nav li:hover li:hover li:hover ul ul,
+.strumet_header_footer .nav li:hover li:hover li:hover li:hover ul ul {
+    position: absolute;
+	display: none;
+    padding: 0;
+    list-style: none;
+	font-family: inherit;
+}
+
+.strumet_header_footer .nav li:hover ul.sub li a {
+    display: block;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    text-indent: 5px;
+    color: #000;
+    text-decoration: none;
+	background: rgba(227, 227, 227, 1);
+	margin: 1px 0;
+	font-weight: inherit;
+	font-weight: inherit;
+}
+
+main.strumet {
+	margin: 50px auto;
+	padding: 10px 100px 10px 10px;
+	max-width: 600px;
+	line-height: 1.5em;
+	font-family: open sans;
+	font-style: italic;
+	font-size: 1.2em;
+	color: #272727;
+}
+
+main.strumet h1{
+	font-size: 1.5em;
+	font-weight: unset;
+}

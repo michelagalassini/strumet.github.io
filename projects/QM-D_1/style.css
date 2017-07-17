@@ -54,6 +54,7 @@ header {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
+  font-size: 20px;
 }
 
 
@@ -69,7 +70,7 @@ h1 {
 
 
 nav {
-  height: 50px;
+  height: 150px;
   flex: 100%;
   display: flex;
 }
@@ -91,7 +92,6 @@ nav li {
 nav a, nav span {
   display: inline-block;
   font-size: 2rem;
-  height: 3rem;
   line-height: 1.7;
   text-transform: uppercase;
   text-decoration: none;
@@ -121,7 +121,6 @@ aside {
 aside a {
   display: block;
   float: left;
-  width: 70%;
   margin-left: 23px;
 
 }

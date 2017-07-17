@@ -1,3 +1,4 @@
+< HEAD
 html, body {
   margin: 0;
   padding: 0;
@@ -9,21 +10,50 @@ html{
 }
 
 h3{
-  font-family: 'myriad pro light';
+  font-family: Verdana, sans-serif;
   color: white;
   font-style: normal;
+  text-align: left;
+}
+
+ul#menu {
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#menu li {
+    color: yellow
+    display: block;
+    width: 150px;
+    height: 1px;
+    margin: 39px;
+    float: left;; /* elementi su singola riga */
+}
+
+ul#menu li a {
+    font-weight:lighter;
+    color: white
+    line-height: 30px;
+    text-decoration: none;
+    width: 150px;
+    height: 30px;
+    text-align: center;
 }
 
 
-
 #primo_h1, p {
-  font-family: 'myriad pro light';
+  font-family: Verdana, sans-serif;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 p.seconda_parte {
   font-family: sans-serif;
+  color: white;
+
 }
 
 p > strong {
@@ -38,10 +68,17 @@ h1{
   color: white;
 }
 
+p titoletti {
+  font-variant: small-caps;
+  text-color: white;
+  font-size: 10px;
+  }
+
 li {
-  text-color: yellow;
+  text-color: white;
 }
 
 img {
   max-height: 150px;
 }
+> origin/master

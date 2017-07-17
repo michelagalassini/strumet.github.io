@@ -3,8 +3,25 @@
 	<head>
 		<meta charset="utf-8">
 		<title>VV-D_4</title>
-		<link href="https://fonts.googleapis.com/css?family=LimeLight"/>
-		<link rel ="stylesheet" href="style.css">
+
+		<link rel ="stylesheet" href="css/style.css">
+		<link rel ="stylesheet" href="css/font-awesome.min.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#open-close-menu").click(function(){
+					if($("#elenco").is(":visible")){
+						$("#elenco").hide();
+					}
+					else{
+						$("#elenco").show();
+					}
+					$(this).toggleClass("fa-plus-square-o");
+					$(this).toggleClass("fa-minus-square-o");
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -49,36 +66,38 @@
 		<div class="div-parent-img">
 			<div class="pull-left div-img">
 				<figure>
-					<a href="IMG/piante_PDF.pdf" target="_blank"><img src="IMG/piante_A6.jpg" alt="Piante" class="home"></a>
+					<a href="IMG/piante_PDF.pdf" target="_blank"><img src="IMG/piante.jpg" alt="Piante" class="home"></a>
 					<figcaption> PIANTE </figcaption>
 			  </figure>
 			</div>
 			<div class="pull-left div-img">
 				<figure>
-			  	<a href="IMG/prospetti_PDF.pdf" target="_blank"><img src="IMG/prospetti_A6.jpg" alt="Prospetti" class="home"></a>
+			  	<a href="IMG/prospetti_PDF.pdf" target="_blank"><img src="IMG/prospetti.jpg" alt="Prospetti" class="home"></a>
 					<figcaption> PROSPETTI </figcaption>
 			  </figure>
 			</div>
-				<div class="pull-left div-img">
-					<figure>
-						<a href="IMG/sezioniAeB_PDF.pdf" target="_blank"><img src="IMG/sezioniAeB_A6.jpg" alt="Sezioni A e B" class="home"></a>
-						<figcaption> SEZIONI </figcaption>
-				  </figure>
-				</div>
-				<div class="pull-left div-img">
-					<figure>
-				  	<a href="IMG/sezioniCeD_PDF.pdf" target="_blank"><img src="IMG/sezioniCeD_A6.JPG" alt="Sezioni C e D" class="home"></a>
-						<figcaption> SEZIONI </figcaption>
-				  </figure>
-				</div>
+			<div class="pull-right div-img">
+				<figure>
+					<a href="IMG/sezioniCeD_PDF.pdf" target="_blank"><img src="IMG/sezCeD.jpg" alt="Sezioni C e D" class="home"></a>
+					<figcaption> SEZIONI </figcaption>
+			  </figure>
+			</div>
+			<div class="pull-left div-img">
+				<figure>
+			  	<a href="IMG/sezioniAeB_PDF.pdf" target="_blank"><img src="IMG/sezAeB.jpg" alt="Sezioni A e B" class="home"></a>
+					<figcaption> SEZIONI </figcaption>
+			  </figure>
+			</div>
 		</div>
-
-<p class=titoletti> <strong>AMBIENTI: </strong></p>
-		<ul>
+<div id="fixed-menu">
+<p class=titoletti> <strong>AMBIENTI <i class="fa fa-plus-square-o" aria-hidden="true" id="open-close-menu"></i>
+</strong></p>
+		<ul id="elenco">
 			<li><a href="camera.html">Camera</a> by <a href="https://github.com/rossivaleria"> Valeria Rossi </a> </li>
 			<li><a href="studio.html">Studio</a> by <a href="https://github.com/leonardotumminello"> Leonardo Tumminiello</a> </li>
 			<li><a href="cucina.html">Cucina</a> by <a href="https://github.com/yleniabarbera"> Ylenia Barbera</a> </li>
 		</ul>
+	</div>
 
 		<script src="https://strumet.github.io/main.js"></script>
 		</body>

@@ -7,51 +7,112 @@
 	</head>
 	<body>
 <h1 id="primo_h1" class="prima_parte">AMBIENTE CUCINA</h1>
-<h2 id="prima parte">Proposta progettuale</h2>
+<h1 id="secondo_h1" class="seconda_parte">Proposta di arredo per la cucina</h1>
 
-<p class="seconda_parte">Nell'ambiente cucina troviamo una struttura modulare con un mobile di base, un pensile e i dovuti elettrodomestici. A seguire si trovano i disegni esplicativi degli elementi di arredo della cucina.
+<p class="seconda_parte">Nell'ambiente cucina troviamo una struttura modulare con un mobile di base, un pensile e i dovuti elettrodomestici.
 </p>
 
-<ul>
-				<li>
-					<h3>Mobile base con ante e cassetti</h3>
-					 <a href="img cucina/A701grande.jpg"><img src="img cucina/A701piccola.jpg" alt="PROVA"></a>
-					 <a href="img cucina/A702grande.jpg"><img src="img cucina/A702piccola.jpg" alt="PROVA"></a>
-					 <a href="img cucina/A703grande.jpg"><img src="img cucina/A703piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Mobile base con ante e cassetti</h3>
-					 <a href="img cucina/A704grande.jpg"><img src="img cucina/A704piccola.jpg" alt="PROVA"></a>
-					 <a href="img cucina/A705grande.jpg"><img src="img cucina/A705piccola.jpg" alt="PROVA"></a>
-					 <a href="img cucina/A706grande.jpg"><img src="img cucina/A706piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Frigorifero</h3>
-					 <a href="img cucina/A707grande.jpg"><img src="img cucina/A707piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Lavello da incasso</h3>
-					 <a href="img cucina/A708grande.jpg"><img src="img cucina/A708piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Cappa</h3>
-					 <a href="img cucina/A709grande.jpg"><img src="img cucina/A709piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Piano cottura a gas</h3>
-					 <a href="img cucina/A710grande.jpg"><img src="img cucina/A710piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Forno</h3>
-					 <a href="img cucina/A711grande.jpg"><img src="img cucina/A711piccola.jpg" alt="PROVA"></a>
-				</li>
-				<li>
-					<h3>Rubinetto</h3>
-					 <a href="img cucina/A712grande.jpg"><img src="img cucina/A712piccola.jpg" alt="PROVA"></a>
-				</li>
+<div class="slideshow-container">
 
-				<div><p class="seconda_parte"> A questo punto è possibile effettuare una proposta sugli accessori che completano l'ambiente.
-				</p></div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <a href="img cucina/pianta.jpg"><img src="img cucina/pianta.jpg" style="width:100%"></a>
+  </div>
 
-						<h3>Gli accessori</h3>
-						 <a href="img cucina/A401grande.jpg"><img src="img cucina/A401piccola.jpg" alt="PROVA"></a>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <a href="img cucina/prospetto.jpg"><img src="img cucina/prospetto.jpg" style="width:100%"></a>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <a href="img cucina/prospetto2.jpg"><img src="img cucina/prospetto2.jpg" style="width:100%"></a>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <a href="img cucina/prospetti.jpg"><img src="img cucina/prospetti.jpg" style="width:100%"></a>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <a href="img cucina/sezioni.jpg"><img src="img cucina/sezioni.jpg" style="width:100%"></a>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+	<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<p id=cucina><a href="pdf cucina/QM-D_3_CUCINA.pdf" download="QM-D_3_CUCINA.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h1 id="secondo_h1" class="seconda_parte">Complementi di arredo utilizzati</h1>
+		<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/30326808">Mobile base con ante e cassetti KNOXHULT no.303.268.08</a></h2>
+		 <a href="img cucina/KNOXHULT_303.268.08.jpg"><img src="img cucina/KNOXHULT_303.268.08.jpg" alt="Mobile base con due ante e due cassetti"></a>
+<p id=cucina><a href="pdf cucina/KNOXHULT_303.268.08.pdf" download="KNOXHULT no.303.268.08.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/90326810/">Pensile con anta KNOXHULT no.903.268.10</a></h2>
+ <a href="img cucina/KNOXHULT_903.268.10.jpg"><img src="img cucina/KNOXHULT_903.268.10.jpg" alt="Pensile con anta"></a>
+<p id=cucina><a href="pdf cucina/KNOXHULT_903.268.10.pdf" download="KNOXHULT no.903.268.10.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/20312755/">Frigorifero FROSTKALL no.203.127.55</a></h2>
+ <a href="img cucina/FROSTKALL_203.127.55.jpg"><img src="img cucina/FROSTKALL_203.127.55.jpg" alt="Frigorifero"></a>
+<p id=cucina><a href="pdf cucina/FROSTKALL_203.127.55.pdf" download="FROSTKALL no.203.127.55.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/S59158003/">Lavello da incasso FYNDIG no.591.580.03</a></h2>
+ <a href="img cucina/FYNDIG_591.580.03.jpg"><img src="img cucina/FYNDIG_591.580.03.jpg" alt="Lavello da incasso"></a>
+<p id=cucina><a href="pdf cucina/FYNDIG_591.580.03.pdf" download="FYNDIG_591.580.03.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/10085027/">Miscelatore LAGAN no.100.850.27</a></h2>
+ <a href="img cucina/LAGAN_100.850.27.jpg"><img src="img cucina/LAGAN_100.850.27.jpg" alt="Miscelatore"></a>
+<p id=cucina><a href="pdf cucina/LAGAN_100.850.27.pdf" download="LAGAN_100.850.27.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/20152196/">Forno LAGAN no.201.521.96</a></h2>
+ <a href="img cucina/LAGAN_201.521.96.jpg"><img src="img cucina/LAGAN_201.521.96.jpg" alt="Forno"></a>
+<p id=cucina><a href="pdf cucina/LAGAN_201.521.96.pdf" download="LAGAN_201.521.96.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/50156008/">Piano cottura a gas LAGAN no.501.560.08</a></h2>
+ <a href="img cucina/LAGAN_501.560.08.jpg"><img src="img cucina/LAGAN_501.560.08.jpg" alt="Piano cottura a gas"></a>
+<p id=cucina><a href="pdf cucina/LAGAN_501.560.08.pdf" download="LAGAN_501.560.08.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
+
+<h2 id="seconda parte"><a href="http://www.ikea.com/it/it/catalog/products/70304588/">Cappa LAGAN no.703.045.88</a></h2>
+ <a href="img cucina/LAGAN_703.045.88.jpg"><img src="img cucina/LAGAN_703.045.88.jpg" alt="Cappa"></a>
+<p id=cucina><a href="pdf cucina/LAGAN_703.045.88.pdf" download="LAGAN_703.045.88.pdf">Clicca qui per scaricare il file PDF dei disegni tecnici</a></p>
